@@ -58,6 +58,7 @@ Configuration of the u8g2 library in [u8g2_GraphicsTest.ino](/Arduino/u8g2_Graph
 #include <Wire.h>
 #endif
 
+// Hardware-SPI
 U8G2_ST7565_ERC12864_ALT_F_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 7, /* dc=*/ 8, /* reset=*/ U8X8_PIN_NONE);
 
 #define CONTRAST 75      // don't forget, to set the contrast!
@@ -71,14 +72,14 @@ void loop(void) {
   //...
 }  
 ````
-## TFT_eSPI-Library and Touch-Display ST7735.
+## TFT_eSPI-Library and 1.8" Touch-Display ST7735 (128x160).
 
 Test with the LGT8F328P LQFP36 "Mini Pro" 3.3V and USB-TTL-Adapter. 
 
 ![LGT8F328P_TFT_eSPI_small.jpg](pictures/LGT8F328P_TFT_eSPI_small.jpg)
 Display and touch work fine with modification of TFT_eSPI\Processors\TFT_eSPI_Generic.h (see below).
 
-Connections for Touch-Display [ST7735](/pictures/Touch_Display_1.8_SD.png) :
+Connections for 1.8" Touch-Display [ST7735](/pictures/Touch_Display_1.8_SD.png) :
 
 | GPIO | TFT   | Touch | SD-Card | Description      |
 | ---: | :---- | :---- | :------ | :--------------- |
