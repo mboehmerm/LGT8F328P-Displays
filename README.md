@@ -24,7 +24,7 @@ https://github.com/dbuezas/lgt8fx
 - Test TFT_eSPI : [TFT_eSPI_graphicstest_small_touch.ino](/Arduino/TFT_eSPI_graphicstest_small_touch/TFT_eSPI_graphicstest_small_touch.ino)
 
 ## u8g2-Library and Display GMG12864-06D
-Test with LGT8F328P LQFP48 "Nano Style" and GMG12864-06D. 
+Test with LGT8F328P LQFP48 "Nano" and Display GMG12864-06D. 
 
 ![LGT8F328P_u8g2_small.jpg](pictures/LGT8F328P_u8g2_small.jpg)
 
@@ -42,6 +42,8 @@ Connections for LCD Display GMG12864-06D Ver:2.2 :
 | VSS  |      | GND             |
 | A    |      | LED A -> 47Ω -> 3.3V (5V)|
 | K    |      | LED K -> GND             |
+
+The display can be used with 3,3V or 5V. In this test i used a 3.3V voltage regulator for VSS and backlight LED.
 
 Configuration of the u8g2 library in [u8g2_GraphicsTest.ino](/Arduino/u8g2_GraphicsTest/u8g2_GraphicsTest.ino):
 ````java
@@ -137,10 +139,3 @@ inline static uint8_t transfer(uint8_t data) {
   return rcvd;
 }
 ````
-
-
-Links :
-
-https://wolles-elektronikkiste.de/minievb-boards-ein-ueberblick
-
-https://wolles-elektronikkiste.de/lgt8f328p-lqfp32-boards
