@@ -30,7 +30,8 @@ Test with LGT8F328P LQFP48 "Nano" and Display GMG12864-06D.
 
 Also tested with the LGT8F328P LQFP32 "Pro Mini" 3.3V and USB-TTL-Adapter (see below). Works fine and very fast.
 
-Connections for LCD Display GMG12864-06D Ver:2.2 :
+Connections for LCD Display [GMG12864-06D](/pictures/GMG12864.jpg) :
+
 | TFT  | GPIO | Description     |
 | :--- | ---: | :-------------- |
 | SI   |   11 | SPI MOSI        |
@@ -77,7 +78,8 @@ Test with the LGT8F328P LQFP36 "Mini Pro" 3.3V and USB-TTL-Adapter.
 ![LGT8F328P_TFT_eSPI_small.jpg](pictures/LGT8F328P_TFT_eSPI_small.jpg)
 Display and touch work fine with modification of TFT_eSPI\Processors\TFT_eSPI_Generic.h (see below).
 
-Connections for Touch-Display ST7735 :
+Connections for Touch-Display [ST7735](/pictures/Touch_Display_1.8_SD.png) :
+
 | GPIO | TFT   | Touch | SD-Card | Description      |
 | ---: | :---- | :---- | :------ | :--------------- |
 | 11   | SDA   | T_DIN | SD_MOSI | MOSI             |
