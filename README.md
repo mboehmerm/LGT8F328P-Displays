@@ -1,6 +1,6 @@
 # LGT8F328P-Displays
 
-## under construction !
+# !!! under construction !!!
 
 Testing cheap Arduino clones LGT8F328P with the lgt8fx Board Package from dbuezas and the display libraries u8g2 and TFT_eSPI.
 
